@@ -35,17 +35,17 @@ This system segments and classifies cracks in wall images by performing the foll
 
 To get started, follow these steps:
 
-    1. Clone the repository:
+- Clone the repository:
     ```bash
     git clone https://github.com/apoorva-info/Image-Crack-Detector.git
     cd Image-Crack-Detector
     ```
 
-    2. Ensure you have MATLAB installed with the **Image Processing Toolbox**.
+- Ensure you have MATLAB installed with the **Image Processing Toolbox**.
 
-    3. Open the `source.m` file in MATLAB to execute the crack detection pipeline.
+- Open the `source.m` file in MATLAB to execute the crack detection pipeline.
 
-    4. Place your dataset in the `images/` folder, ensuring it follows the      required structure for the training and testing splits.
+- Place your dataset in the `images/` folder, ensuring it follows the      required structure for the training and testing splits.
 
 ## **Data Preparation**
 
