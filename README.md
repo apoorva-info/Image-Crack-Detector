@@ -28,7 +28,7 @@ This system segments and classifies cracks in wall images by performing the foll
 - **SVM Classifier for Crack/Non-Crack Classification**
 - **Performance Evaluation using metrics such as Accuracy, Intersection-over-Union (IoU), and Crack Length Estimation**
 
-### Webapplication
+### Original Image
 ![Original Image](images/wall_crack_4.jpeg)
 
 ## **Installation**
@@ -55,8 +55,14 @@ A total of 12 wall images were captured manually using a smartphone. The images 
 ### **2. Data Annotation**
 MATLAB's Image Labeler was used to annotate cracks in the images. Each crack was labeled as pixel value `255`, while non-crack regions were labeled as `0`. Ground truth masks were created and stored in the `masks/` directory.
 
+### MATLAB’s Image Labeler
+![MATLAB’s Image Labeler](images/output/Data_Annotation.png)
+
 ### **3. Data Split**
 The dataset was split into 80% training and 20% testing to avoid overfitting. The training set includes 10 images, and the test set contains 2 images.
+
+### Statistics
+![Statistics](images/output/Data_Split.png)
 
 ## **Augmentation**
 
@@ -134,6 +140,9 @@ crackLength = regionprops(thinnedImage, 'MajorAxisLength');
 - **IoU Score**: 100% (Average across test images)
 
 These results demonstrate the system’s ability to accurately detect and classify cracks in wall images, though the small dataset size raises concerns about generalization to more diverse environments.
+
+### Visualization
+![Visualization](images/output/output.png)
 
 ## **Future Work**
 
