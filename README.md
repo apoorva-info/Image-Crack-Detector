@@ -21,28 +21,31 @@ The key objective of this project is to develop a reliable and interpretable cra
 Structural cracks are critical indicators of underlying faults in infrastructures. The system developed in this project provides a robust pipeline for detecting cracks in wall images using traditional image processing methods and supervised learning (SVM) for classification.
 
 This system segments and classifies cracks in wall images by performing the following key tasks:
-1. **Data Acquisition and Annotation**
-2. **Image Augmentation**
-3. **Image Segmentation using Adaptive Thresholding and Morphological Filtering**
-4. **Feature Extraction from Segmented Cracks**
-5. **SVM Classifier for Crack/Non-Crack Classification**
-6. **Performance Evaluation using metrics such as Accuracy, Intersection-over-Union (IoU), and Crack Length Estimation**
+- **Data Acquisition and Annotation**
+- **Image Augmentation**
+- **Image Segmentation using Adaptive Thresholding and Morphological Filtering**
+- **Feature Extraction from Segmented Cracks**
+- **SVM Classifier for Crack/Non-Crack Classification**
+- **Performance Evaluation using metrics such as Accuracy, Intersection-over-Union (IoU), and Crack Length Estimation**
+
+### Webapplication
+![Original Image](images/wall_crack_4.jpeg)
 
 ## **Installation**
 
 To get started, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/apoorva-info/Image-Crack-Detector.git
-   cd Image-Crack-Detector
-   ```
+    1. Clone the repository:
+    ```bash
+    git clone https://github.com/apoorva-info/Image-Crack-Detector.git
+    cd Image-Crack-Detector
+    ```
 
-2. Ensure you have MATLAB installed with the **Image Processing Toolbox**.
+    2. Ensure you have MATLAB installed with the **Image Processing Toolbox**.
 
-3. Open the `source.m` file in MATLAB to execute the crack detection pipeline.
+    3. Open the `source.m` file in MATLAB to execute the crack detection pipeline.
 
-4. Place your dataset in the `images/` folder, ensuring it follows the required structure for the training and testing splits.
+    4. Place your dataset in the `images/` folder, ensuring it follows the      required structure for the training and testing splits.
 
 ## **Data Preparation**
 
@@ -126,9 +129,9 @@ crackLength = regionprops(thinnedImage, 'MajorAxisLength');
 
 ## **Results**
 
-1. **Training Accuracy**: 100%
-2. **Testing Accuracy**: 100%
-3. **IoU Score**: 100% (Average across test images)
+- **Training Accuracy**: 100%
+- **Testing Accuracy**: 100%
+- **IoU Score**: 100% (Average across test images)
 
 These results demonstrate the system’s ability to accurately detect and classify cracks in wall images, though the small dataset size raises concerns about generalization to more diverse environments.
 
@@ -142,6 +145,6 @@ There are several areas where this project can be expanded and improved:
   
 ## **References**
 
-1. MATLAB Documentation: Image Processing Toolbox.
-2. MATLAB Image Labeler: Annotation of Image Data.
-3. Smith, S., & Doe, J. (2023). Crack Detection in Structures Using Traditional Methods. *Journal of Computer Vision*.
+    1. MATLAB Documentation: Image Processing Toolbox.
+    2. MATLAB Image Labeler: Annotation of Image Data.
+    3. Smith, S., & Doe, J. (2023). Crack Detection in Structures Using Traditional Methods. *Journal of Computer Vision*.
